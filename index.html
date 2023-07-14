@@ -120,9 +120,9 @@
       <div class="img-dim"></div>
     </div>
     <div class="info">
-      <div class="username">Your Name </div>
+      <div class="username">高喆 </div>
       <div class="dot"></div>
-      <div class="subtitle">This is the subtitle </div>
+      <div class="subtitle">私人博客记录学习文档 </div>
       <div class="link-list">
         
           <a class="link-btn" target="_blank" rel="noopener" href="https://twitter.com" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
@@ -158,6 +158,11 @@
           <div class="archive-count">1 </div>
         </a>
       
+        <a class="archive-link" href="/archives/2022/06 ">
+          June 2022 
+          <div class="archive-count">1 </div>
+        </a>
+      
     </div>
   </div>
 
@@ -171,6 +176,10 @@
         
           <li>
             <a href="/2023/07/14/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">(no title)</a>
           </li>
         
       </ul>
@@ -260,6 +269,95 @@ More info: Deployment
 
  
 
+   
+
+<article id="post-微服务部署的常见问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">Untitled</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2022-06-06T08:31:57.007Z" itemprop="datePublished">2022-06-06</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            93 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            微服务部署的常见问题maven篇1. clean、package都失败是因为父项目需要在pom中配置：pom
+子项目需要在pom中配置：jar
+nacos篇1. nacos无法注册服务
+
+解决方法
+
+有可能导入没有nacos启动器的依赖：
+12345&lt;!-- bootstrap 启动器 --&gt;   &lt;dependency&gt;       &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;       &lt;artifactId&gt;spring-cloud-starter-bootstrap&lt;/artifactId&gt;   &lt;/dependency&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
 
 
     </div>
@@ -268,7 +366,7 @@ More info: Deployment
   
   <div id="footer-info" class="inner">
     
-    &copy; 2023 Your Name<br>
+    &copy; 2023 高喆<br>
     Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
   </div>
 </footer>
