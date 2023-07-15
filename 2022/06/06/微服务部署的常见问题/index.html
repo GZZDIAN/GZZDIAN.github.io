@@ -13,19 +13,20 @@
   
   <title>微服务部署常见问题 | gzzear&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="微服务部署的常见问题maven篇1. clean、package都失败是因为父项目需要在pom中配置：pom 子项目需要在pom中配置：jar nacos篇1. nacos无法注册服务  解决方法  有可能导入没有nacos启动器的依赖： 12345&lt;!-- bootstrap 启动器 --&gt;   &lt;dependency&gt;       &lt;groupId&gt;org.">
+  <meta name="description" content="微服务部署的常见问题maven篇1. clean、package都失败是因为父项目需要在pom中配置：pom 子项目需要在pom中配置：jar 设置图片  nacos篇1. nacos无法注册服务  解决方法  有可能导入没有nacos启动器的依赖： 12345&lt;!-- bootstrap 启动器 --&gt;   &lt;dependency&gt;       &lt;groupId&amp;g">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微服务部署常见问题">
 <meta property="og:url" content="http://example.com/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="gzzear&#39;s blog">
-<meta property="og:description" content="微服务部署的常见问题maven篇1. clean、package都失败是因为父项目需要在pom中配置：pom 子项目需要在pom中配置：jar nacos篇1. nacos无法注册服务  解决方法  有可能导入没有nacos启动器的依赖： 12345&lt;!-- bootstrap 启动器 --&gt;   &lt;dependency&gt;       &lt;groupId&gt;org.">
+<meta property="og:description" content="微服务部署的常见问题maven篇1. clean、package都失败是因为父项目需要在pom中配置：pom 子项目需要在pom中配置：jar 设置图片  nacos篇1. nacos无法注册服务  解决方法  有可能导入没有nacos启动器的依赖： 12345&lt;!-- bootstrap 启动器 --&gt;   &lt;dependency&gt;       &lt;groupId&amp;g">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.assets/image-20220606163451468.png">
+<meta property="og:image" content="http://example.com/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/gaozhe/blog/source/_posts/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.assets/image-20230715095909634.png">
+<meta property="og:image" content="http://example.com/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/image-20220606163451468.png">
 <meta property="article:published_time" content="2022-06-06T08:31:57.007Z">
-<meta property="article:modified_time" content="2023-07-14T15:19:32.143Z">
+<meta property="article:modified_time" content="2023-07-15T01:59:24.215Z">
 <meta property="article:author" content="gaozhe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.assets/image-20220606163451468.png">
+<meta name="twitter:image" content="http://example.com/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/gaozhe/blog/source/_posts/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.assets/image-20230715095909634.png">
   
     <link rel="alternate" href="/atom.xml" title="gzzear's blog" type="application/atom+xml">
   
@@ -231,7 +232,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            93 words 
+            99 words 
           </div>
         </div>
         
@@ -240,7 +241,9 @@
         
           <h1 id="微服务部署的常见问题"><a href="#微服务部署的常见问题" class="headerlink" title="微服务部署的常见问题"></a>微服务部署的常见问题</h1><h2 id="maven篇"><a href="#maven篇" class="headerlink" title="maven篇"></a>maven篇</h2><h3 id="1-clean、package都失败"><a href="#1-clean、package都失败" class="headerlink" title="1. clean、package都失败"></a>1. clean、package都失败</h3><p>是因为父项目需要在pom中配置：<package>pom</package></p>
 <p>子项目需要在pom中配置：<package>jar</package></p>
-<h2 id="nacos篇"><a href="#nacos篇" class="headerlink" title="nacos篇"></a>nacos篇</h2><h3 id="1-nacos无法注册服务"><a href="#1-nacos无法注册服务" class="headerlink" title="1. nacos无法注册服务"></a>1. nacos无法注册服务</h3><p><img src="/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.assets/image-20220606163451468.png" alt="image-20220606163451468"></p>
+<p>设置图片</p>
+<p><img src="/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/gaozhe/blog/source/_posts/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.assets/image-20230715095909634.png" alt="image-20230715095909634"></p>
+<h2 id="nacos篇"><a href="#nacos篇" class="headerlink" title="nacos篇"></a>nacos篇</h2><h3 id="1-nacos无法注册服务"><a href="#1-nacos无法注册服务" class="headerlink" title="1. nacos无法注册服务"></a>1. nacos无法注册服务</h3><p><img src="/2022/06/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/image-20220606163451468.png" alt="image-20220606163451468"></p>
 <blockquote>
 <p>解决方法</p>
 </blockquote>
